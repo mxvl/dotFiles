@@ -156,6 +156,9 @@ bar {
 }
 
 ##############################################################################################
+# Windows settings
+for_window [class="^.*"] border pixel 0
+
 # Autostart programs
 exec dhclient
 exec nm-applet
