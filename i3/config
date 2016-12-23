@@ -117,7 +117,7 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym $mod+Shift+t reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
@@ -157,21 +157,18 @@ bar {
 
 ##############################################################################################
 # Windows settings
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 0 # remove window border
 
 # Autostart programs
 exec dhclient
-exec nm-applet
 exec setxkbmap -layout ca
 exec redshift-gtk
 
 # xset settings
+exec xset -dpms
 exec xset s off
 exec xset s noblank
-exec xset -dpms
-
-# Touchpad fix (tap=left-click)
-exec synclient TapButton1=1
 
 # Keybinding
 bindsym $mod+c exec chromium
+bindsym $mod+Shift+c exec google-chrome-stable
