@@ -160,7 +160,6 @@ bar {
 for_window [class="^.*"] border pixel 0 # remove window border
 
 # Autostart programs
-exec dhclient
 exec setxkbmap -layout ca
 exec redshift-gtk
 
