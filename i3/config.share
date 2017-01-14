@@ -172,3 +172,4 @@ exec xset s noblank
 # Keybinding
 bindsym $mod+c exec chromium
 bindsym $mod+Shift+c exec google-chrome-stable
+
