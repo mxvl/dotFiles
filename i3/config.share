@@ -164,6 +164,7 @@ exec nm-applet
 exec setxkbmap -layout ca
 exec redshift-gtk
 exec compton
+exec conkymxvl
 
 # xset settings
 exec xset -dpms
