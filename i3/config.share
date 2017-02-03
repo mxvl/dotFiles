@@ -163,6 +163,7 @@ for_window [class="^.*"] border pixel 0 # remove window border
 exec nm-applet
 exec setxkbmap -layout ca
 exec redshift-gtk
+exec compton
 
 # xset settings
 exec xset -dpms
