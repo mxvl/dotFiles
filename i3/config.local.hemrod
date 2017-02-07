@@ -7,7 +7,6 @@
 # Tap touchpad to click
 exec xinput set-prop 14 292 1 # With libinput
 
-
-# Shortcut for resolution
-# Living room
-bindsym $mod+Shift+s exec ~/.screenlayout/salon.sh
+# Screen config
+exec secDisplay.sh
+bindsym $mod+Shift+s exec ~/.screenlayout/salon.sh # shortcut for livingroom layout
