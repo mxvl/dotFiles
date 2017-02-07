@@ -8,5 +8,5 @@
 exec xinput set-prop 14 292 1 # With libinput
 
 # Screen config
-exec secDisplay.sh
+exec ~/.config/i3/secDisplay.sh
 bindsym $mod+Shift+s exec ~/.screenlayout/salon.sh # shortcut for livingroom layout
