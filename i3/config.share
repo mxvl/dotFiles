@@ -166,6 +166,7 @@ exec setxkbmap -layout ca
 exec redshift-gtk
 exec compton
 exec conkymxvl
+exec udiskie
 
 # xset settings
 exec xset -dpms
