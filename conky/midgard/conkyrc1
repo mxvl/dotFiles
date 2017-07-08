@@ -43,7 +43,7 @@ conky.config = {
     gap_y = 60,
     minimum_height = 5,
 	minimum_width = 200,
-	maximum_width = 350,
+	maximum_width = 550,
     net_avg_samples = 2,
 	double_buffer = true,
     no_buffers = true,
@@ -63,7 +63,5 @@ conky.config = {
 }
 
 conky.text = [[
-${alignc}TODO
-$hr
-${execpi 60 cat $HOME/Dropbox/notes/todo.txt | head -20 | sort}
+${execpi 60 cat $HOME/.taskslist | head -20}
 ]]
