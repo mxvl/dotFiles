@@ -1,8 +1,3 @@
-" plugins
-call plug#begin()
-Plug 'https://github.com/Valloric/YouCompleteMe'
-call plug#end()
-
 " Common settings
 syntax on
 

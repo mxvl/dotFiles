@@ -5,5 +5,4 @@
 #########################
 
 # Screen layout
-exec ~/.screenlayout/default.sh
 exec nitrogen --restore
