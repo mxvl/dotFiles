@@ -59,9 +59,15 @@ conky.config = {
     uppercase = false,
     use_spacer = 'none',
     show_graph_scale = false,
-    show_graph_range = false
+    show_graph_range = false,
+	xinerama_head = 1
 }
 
 conky.text = [[
-${execpi 60 cat $HOME/.taskslist | head -20}
+${alignc}Scolaire
+${execpi 60 cat $HOME/.config/conky/conkyu.task | head -20}
+$hr
+
+${alignc}Personnel
+${execpi 60 cat $HOME/.config/conky/conky.task | head -20}
 ]]

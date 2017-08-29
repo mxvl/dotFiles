@@ -19,3 +19,6 @@ set foldmethod=syntax
 set foldnestmax=10
 set nofoldenable
 set foldlevel=2
+
+" Autocorrect
+" set spell spelllang=fr

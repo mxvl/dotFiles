@@ -155,12 +155,12 @@ for_window [class="^.*"] border pixel 0 # remove window border
 
 # Autostart programs
 exec nm-applet
-exec dropboxd
+exec dropbox
 exec setxkbmap -layout ca
 exec redshift-gtk
 exec compton
 exec conkymxvl
-exec polybarMxvl
+exec polybarmxvl
 exec udiskie
 
 # xset settings
