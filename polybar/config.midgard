@@ -1,0 +1,75 @@
+[bar/global]
+width = 100%
+height = 20
+background = #cc000000
+foreground = #0f0
+
+modules-center = i3
+modules-right = date
+
+
+[bar/top1]
+inherit = bar/global
+monitor = DVI-D-0
+tray-position = left
+
+
+[bar/top2]
+inherit = bar/global
+monitor = HDMI-0
+
+modules-left = memory
+
+
+[bar/top3]
+inherit = bar/global
+monitor = DP-0
+
+modules-left = cpu
+
+
+[module/date]
+type = internal/date
+
+interval = 1
+date = %Y-%m-%d
+time = %H:%M:%S
+label = %date% %time%
+
+
+[module/i3]
+type = internal/i3
+
+; Only show workspaces defined on the same output as the bar
+pin-workspaces = true
+
+enable-click = true
+enable-scroll = true
+
+
+[module/cpu]
+type = internal/cpu
+interval = 1
+
+label = CPUs %percentage-cores%
+
+
+[module/filesystem]
+type = internal/fs
+
+mount-0 = /
+mount-1 = /home
+interval = 60
+spacing = 4
+
+label-mounted = %mountpoint% %used%/%total% 
+
+
+[module/memory]
+type = internal/memory
+
+label = RAM %gb_used%/%gb_total%
+
+
+[module/temperature]
+type = internal/temperature
