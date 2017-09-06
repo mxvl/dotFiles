@@ -63,7 +63,10 @@ conky.config = {
 }
 
 conky.text = [[
-${alignc}TODO
+${alignc}Scolaire
+${execpi 60 cat $HOME/.config/conky/conkyu.task | head -20}
 $hr
-${execpi 60 cat $HOME/Dropbox/notes/todo.txt | head -20 | sort}
+
+${alignc}Personnel
+${execpi 60 cat $HOME/.config/conky/conky.task | head -20}
 ]]
