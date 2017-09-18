@@ -4,7 +4,11 @@ height = 20
 background = #cc000000
 foreground = #0f0
 
-modules-center = i3
+module-margin = 1
+separator = |
+
+modules-left = i3
+modules-center = title
 modules-right = date
 
 [bar/topMain]
@@ -12,7 +16,7 @@ inherit = bar/global
 monitor = LVDS1
 tray-position = left
 
-modules-left = battery
+modules-left = i3 battery
 
 [bar/topSec]
 inherit = bar/global
@@ -35,9 +39,9 @@ time-format = %H:%M
 format-charging = <label-charging>
 format-discharging = <label-discharging>
 
-label-charging = Charging %percentage%%
-label-discharging = Discharging %percentage%%
-label-full = Fully charged
+label-charging = Chr %percentage%%
+label-discharging = Dis %percentage%%
+label-full = Full
 
 
 [module/i3]
@@ -48,3 +52,7 @@ pin-workspaces = true
 
 enable-click = true
 enable-scroll = true
+
+
+[module/title]
+type = internal/xwindow
