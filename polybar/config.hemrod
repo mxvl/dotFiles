@@ -56,3 +56,4 @@ enable-scroll = true
 
 [module/title]
 type = internal/xwindow
+label-maxlen = 50
