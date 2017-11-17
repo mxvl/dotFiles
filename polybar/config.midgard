@@ -4,7 +4,7 @@ height = 20
 background = #cc000000
 foreground = #0f0
 
-modules-center = i3
+modules-left = i3
 modules-right = date
 
 
@@ -18,14 +18,18 @@ tray-position = left
 inherit = bar/global
 monitor = HDMI-0
 
-modules-left = memory
-
 
 [bar/top3]
 inherit = bar/global
 monitor = DP-0
 
-modules-left = cpu
+
+[module/temperature]
+type = internal/temperature
+
+
+[module/title]
+type = internal/xwindow
 
 
 [module/date]
@@ -69,7 +73,3 @@ label-mounted = %mountpoint% %used%/%total%
 type = internal/memory
 
 label = RAM %gb_used%/%gb_total%
-
-
-[module/temperature]
-type = internal/temperature
