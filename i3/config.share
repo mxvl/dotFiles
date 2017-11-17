@@ -169,6 +169,7 @@ exec xset s off
 exec xset s noblank
 
 # Keybinding
+bindsym $mod+x exec firefox
 bindsym $mod+c exec chromium
 bindsym $mod+Shift+c exec google-chrome-stable
 
