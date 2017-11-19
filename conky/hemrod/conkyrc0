@@ -79,12 +79,21 @@ ${color grey}CPU Usage:
   ${color grey}CPU2: $color${cpu cpu1}% ${goto 135}${cpubar cpu1}
   ${color grey}CPU3: $color${cpu cpu2}% ${goto 135}${cpubar cpu2}
   ${color grey}CPU4: $color${cpu cpu3}% ${goto 135}${cpubar cpu3}
+  ${color grey}CPU5: $color${cpu cpu3}% ${goto 135}${cpubar cpu4}
+  ${color grey}CPU6: $color${cpu cpu3}% ${goto 135}${cpubar cpu5}
+  ${color grey}CPU7: $color${cpu cpu3}% ${goto 135}${cpubar cpu6}
+  ${color grey}CPU8: $color${cpu cpu3}% ${goto 135}${cpubar cpu7}
   ${color grey}Processes:$color $processes  ${color grey}Running:$color $running_processes
 $hr
 ${color grey}File systems:
  root $color ${goto 80}${fs_bar 6 /}
  ${goto 100}${fs_used /}/${fs_size /}    
-${color grey}Networking:
+${color grey}
+ home $color ${goto 80}${fs_bar 6 /home/mxvl}
+ ${goto 100}${fs_used /}/${fs_size /home/mxvl}    
+${color grey}LAN:
+Up:$color ${upspeed enp2s0f1} ${color grey} ${goto 150}- Down:$color ${downspeed enp2s0f1}
+${color grey}WLAN:
 Up:$color ${upspeed wlp3s0} ${color grey} ${goto 150}- Down:$color ${downspeed wlp3s0}
 $hr
 ${color grey}Name              PID   CPU%   MEM%

@@ -13,15 +13,10 @@ modules-right = date
 
 [bar/topMain]
 inherit = bar/global
-monitor = LVDS1
+monitor = eDP1
 tray-position = left
 
 modules-left = i3 battery
-
-[bar/topSec]
-inherit = bar/global
-monitor = HDMI1
-
 
 [module/date]
 type = internal/date
