@@ -16,7 +16,7 @@ inherit = bar/global
 monitor = eDP1
 tray-position = left
 
-modules-left = i3 battery
+modules-left = wifi i3 battery
 
 [module/date]
 type = internal/date
@@ -52,3 +52,13 @@ enable-scroll = true
 [module/title]
 type = internal/xwindow
 label-maxlen = 50
+
+[module/wifi]
+type = internal/network
+interface = wlp3s0
+
+interval = 3.0
+format-connected = <label-connected>
+format-disconnected = nope
+
+label-connected = %local_ip%

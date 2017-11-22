@@ -90,7 +90,7 @@ ${color grey}File systems:
  ${goto 100}${fs_used /}/${fs_size /}    
 ${color grey}
  home $color ${goto 80}${fs_bar 6 /home/mxvl}
- ${goto 100}${fs_used /}/${fs_size /home/mxvl}    
+ ${goto 100}${fs_used /home/mxvl}/${fs_size /home/mxvl}    
 ${color grey}LAN:
 Up:$color ${upspeed enp2s0f1} ${color grey} ${goto 150}- Down:$color ${downspeed enp2s0f1}
 ${color grey}WLAN:
