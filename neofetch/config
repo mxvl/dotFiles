@@ -46,9 +46,9 @@ printinfo() {
     # info "Users" users
     # info "Birthday" birthday
 
-    info linebreak
-    info cols
-    info linebreak
+#    info linebreak
+#    info cols
+#    info linebreak
 }
 
 
