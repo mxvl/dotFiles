@@ -162,6 +162,7 @@ exec compton
 exec conkymxvl
 exec polybarmxvl
 exec udiskie
+exec unclutter --timeout 2
 
 # xset settings
 exec xset -dpms
