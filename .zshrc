@@ -88,4 +88,4 @@ source $ZSH/oh-my-zsh.sh
 # screenfetch -t
 neofetch
 
-alias confucius="ssh -N -D 2223 -L 2222:192.168.122.10:22 guest@132.208.10.52"
+export GPG_TTY=$(tty)
