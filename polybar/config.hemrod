@@ -18,6 +18,10 @@ tray-position = left
 
 modules-left = wifi i3 battery
 
+[bar/topMisc]
+inherit = bar/global
+monitor = DP1
+
 [module/date]
 type = internal/date
 
@@ -25,7 +29,6 @@ interval = 1
 date = %Y-%m-%d
 time = %H:%M:%S
 label = %date% %time%
-
 
 [module/battery]
 type = internal/battery
