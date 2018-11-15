@@ -45,3 +45,7 @@ set foldlevel=2
 
 " Autocorrect
 " set spell spelllang=fr
+
+" Encoding
+set encoding=utf-8
+set fileencoding=utf-8
