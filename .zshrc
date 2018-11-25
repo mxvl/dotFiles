@@ -57,6 +57,9 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# where zcomdump will be saved
+compinit -d ~/.cache/zsh/zcompdump-$ZSH_VERSION
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
