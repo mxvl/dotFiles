@@ -34,8 +34,11 @@ set showcmd
 
 " Autoindent settings (language dependant)
 set cindent
+" Tab seetings
 set tabstop=2
 set shiftwidth=2
+" Use spaces instead of tabs
+"set expandtab
 
 " Folding settings (language dependant)
 set foldmethod=syntax
