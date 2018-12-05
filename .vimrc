@@ -38,7 +38,11 @@ set cindent
 set tabstop=2
 set shiftwidth=2
 " Use spaces instead of tabs
-"set expandtab
+set expandtab
+
+" Show whitespaces
+set list
+set listchars=tab:>.,trail:~
 
 " Folding settings (language dependant)
 set foldmethod=syntax
