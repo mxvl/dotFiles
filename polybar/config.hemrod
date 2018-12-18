@@ -7,7 +7,7 @@ foreground = #0f0
 module-margin = 1
 separator = |
 
-modules-left = i3
+modules-left = wifi i3 battery
 modules-center = title
 modules-right = date
 
@@ -16,11 +16,10 @@ inherit = bar/global
 monitor = eDP1
 tray-position = left
 
-modules-left = wifi i3 battery
 
 [bar/topMisc]
 inherit = bar/global
-monitor = DP1
+monitor = HDMI1
 
 [module/date]
 type = internal/date
