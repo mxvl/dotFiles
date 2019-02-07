@@ -15,7 +15,7 @@ Plugin 'git://github.com/Valloric/YouCompleteMe.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
+filetype plugin indent off   " required
 
 " YCM config
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
@@ -27,6 +27,7 @@ syntax on
 set number
 set relativenumber
 set ruler
+set splitbelow
 
 set hls is
 
