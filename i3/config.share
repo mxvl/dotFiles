@@ -155,7 +155,6 @@ for_window [class="^.*"] border pixel 0 # remove window border
 
 # Autostart programs
 exec nm-applet
-exec dropbox
 exec setxkbmap -layout ca
 exec redshift-gtk
 exec compton
