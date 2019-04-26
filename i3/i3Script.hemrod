@@ -1,0 +1,22 @@
+#!/bin/sh
+###################
+#                 #
+# i3 local config #
+#                 #
+###################
+
+# Tap touchpad to click
+xinput set-prop 14 292 1 & # With libinput
+
+# Autostart programs
+nm-applet &
+setxkbmap -layout ca &
+redshift-gtx &
+compton &
+conkymxvl &
+polybarmxvl &
+udiskie &
+unclutter --timeout 2 &
+
+# Screen layout
+nitrogen --restore &
