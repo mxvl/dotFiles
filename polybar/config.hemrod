@@ -14,7 +14,7 @@ modules-right = date
 
 [bar/topMain]
 inherit = bar/global
-monitor = eDP1
+monitor = eDP-1
 tray-position = left
 
 
