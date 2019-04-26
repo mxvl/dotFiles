@@ -1,0 +1,19 @@
+#!/bin/sh
+###################
+#                 #
+# i3 local config #
+#                 #
+###################
+
+# Autostart programs
+nm-applet &
+setxkbmap -layout ca &
+redshift-gtx &
+compton &
+conkymxvl &
+polybarmxvl &
+udiskie &
+unclutter --timeout 2 &
+
+# Screen layout
+nitrogen --restore &

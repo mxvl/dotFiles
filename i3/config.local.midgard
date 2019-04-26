@@ -1,8 +1,0 @@
-#########################
-#                       #
-# Starting local config #
-#                       #
-#########################
-
-# Screen layout
-exec nitrogen --restore

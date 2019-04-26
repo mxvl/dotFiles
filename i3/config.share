@@ -153,16 +153,6 @@ bindsym $mod+r mode "resize"
 # Windows settings
 for_window [class="^.*"] border pixel 0 # remove window border
 
-# Autostart programs
-exec nm-applet
-exec setxkbmap -layout ca
-exec redshift-gtk
-exec compton
-exec conkymxvl
-exec polybarmxvl
-exec udiskie
-exec unclutter --timeout 2
-
 # xset settings
 exec xset -dpms
 exec xset s off
@@ -173,3 +163,5 @@ bindsym $mod+x exec firefox
 bindsym $mod+c exec chromium
 bindsym $mod+Shift+c exec google-chrome-stable
 
+# Local settings
+exec i3Script
