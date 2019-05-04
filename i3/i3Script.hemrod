@@ -11,7 +11,7 @@ xinput set-prop 14 292 1 & # With libinput
 # Autostart programs
 nm-applet &
 setxkbmap -layout ca &
-redshift-gtx &
+redshift-gtk &
 compton &
 conkymxvl &
 polybarmxvl &
