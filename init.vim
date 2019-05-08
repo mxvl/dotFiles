@@ -1,5 +1,6 @@
 syntax on
 
+set guicursor=
 set number
 set relativenumber
 
