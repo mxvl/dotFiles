@@ -12,6 +12,7 @@ set showcmd
 set cindent
 " Tab seetings
 set tabstop=2
+set softtabstop=2
 set shiftwidth=2
 " Use spaces instead of tabs
 "set expandtab
@@ -28,7 +29,3 @@ set foldlevel=2
 
 " Autocorrect
 " set spell spelllang=fr
-
-" Encoding
-set encoding=utf-8
-set fileencoding=utf-8
