@@ -162,6 +162,8 @@ exec xset s noblank
 bindsym $mod+x exec firefox
 bindsym $mod+c exec chromium
 bindsym $mod+Shift+c exec google-chrome-stable
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
 
 # Local settings
 exec i3Script
