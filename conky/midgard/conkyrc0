@@ -26,39 +26,39 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ]]
 
 conky.config = {
-    alignment = 'top_right',
-    background = false,
-    border_width = 1,
-    cpu_avg_samples = 2,
+	alignment = 'top_right',
+	background = false,
+	border_width = 1,
+	cpu_avg_samples = 2,
 	default_color = 'white',
-    default_outline_color = 'white',
-    default_shade_color = 'white',
-    draw_borders = false,
-    draw_graph_borders = true,
-    draw_outline = false,
-    draw_shades = false,
+	default_outline_color = 'white',
+	default_shade_color = 'white',
+	draw_borders = false,
+	draw_graph_borders = true,
+	draw_outline = false,
+	draw_shades = false,
 	use_xft = true,
-    font = 'DejaVu Sans Mono:size=12',
-    gap_x = 25,
-    gap_y = 60,
-    minimum_height = 5,
+	font = 'DejaVu Sans Mono:size=12',
+	gap_x = 25,
+	gap_y = 60,
+	minimum_height = 5,
 	minimum_width = 5,
-    net_avg_samples = 2,
+	net_avg_samples = 2,
 	double_buffer = true,
-    no_buffers = true,
-    out_to_console = false,
-    out_to_stderr = false,
-    extra_newline = false,
-    own_window = true,
-    own_window_class = 'Conky',
-    own_window_type = 'override',
+	no_buffers = true,
+	out_to_console = false,
+	out_to_stderr = false,
+	extra_newline = false,
+	own_window = true,
+	own_window_class = 'Conky',
+	own_window_type = 'override',
 	own_window_transparent = true,
-    stippled_borders = 0,
-    update_interval = 1.0,
-    uppercase = false,
-    use_spacer = 'none',
-    show_graph_scale = false,
-    show_graph_range = false,
+	stippled_borders = 0,
+	update_interval = 1.0,
+	uppercase = false,
+	use_spacer = 'none',
+	show_graph_scale = false,
+	show_graph_range = false,
 	xinerama_head = 3
 }
 
@@ -68,12 +68,12 @@ ${alignc}${font DejaVu Sans Mono:size=12}$sysname $kernel on $machine
 $hr
 ${color grey}Uptime:$color $uptime
 ${color grey}Frequency (in GHz):$color $freq_g
-${color grey}RAM Usage:$color 
+${color grey}RAM Usage:$color
   $memperc%	${goto 80}${membar}
-  ${goto 100}$mem/$memmax    
-${color grey}Swap Usage:$color 
+  ${goto 100}$mem/$memmax
+${color grey}Swap Usage:$color
   $swapperc% ${goto 80}${swapbar}
-  ${goto 100}$swap/$swapmax    
+  ${goto 100}$swap/$swapmax
 ${color grey}CPU Usage:
   ${color grey}Total: $color$cpu% ${goto 135}${cpubar}
    ${color grey}CPU1: $color${cpu cpu0}% ${goto 135}${cpubar cpu0}
@@ -96,9 +96,9 @@ ${color grey}CPU Usage:
 $hr
 ${color grey}File systems:
  root $color ${goto 80}${fs_bar 6 /}
- ${goto 100}${fs_used /}/${fs_size /}    
+ ${goto 100}${fs_used /}/${fs_size /}
  ${color grey}home $color ${goto 80}${fs_bar 6 /home/mxvl}
- ${goto 100}${fs_used /home/mxvl}/${fs_size /home/mxvl}    
+ ${goto 100}${fs_used /home/mxvl}/${fs_size /home/mxvl}
 ${color grey}Networking:
 Up:$color ${upspeed enp3s0} ${color grey} ${goto 150}- Down:$color ${downspeed enp3s0}
 $hr
