@@ -164,6 +164,7 @@ bindsym $mod+c exec chromium
 bindsym $mod+Shift+c exec google-chrome-stable
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
+binsym $mod+Shift+i exec i3lock -c 000000
 
 # Local settings
 exec i3Script
