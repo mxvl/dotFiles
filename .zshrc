@@ -93,5 +93,5 @@ compinit -d ~/.cache/zsh/zcompdump-$ZSH_VERSION
 export GPG_TTY=$(tty)
 
 # Aliasses
-#alias vim=nvim
-#alias vi=nvim
+alias :q=exit
+alias :x=exit
