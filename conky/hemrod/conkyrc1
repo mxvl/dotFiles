@@ -26,49 +26,54 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ]]
 
 conky.config = {
-    alignment = 'top_left',
-    background = false,
-    border_width = 1,
-    cpu_avg_samples = 2,
+	alignment = 'top_left',
+	background = false,
+	border_width = 1,
+	cpu_avg_samples = 2,
 	default_color = 'white',
-    default_outline_color = 'white',
-    default_shade_color = 'white',
-    draw_borders = false,
-    draw_graph_borders = true,
-    draw_outline = false,
-    draw_shades = false,
-    use_xft = true,
-    font = 'DejaVu Sans Mono:size=12',
-    gap_x = 25,
-    gap_y = 60,
-    minimum_height = 5,
+	default_outline_color = 'white',
+	default_shade_color = 'white',
+	draw_borders = false,
+	draw_graph_borders = true,
+	draw_outline = false,
+	draw_shades = false,
+	use_xft = true,
+	font = 'DejaVu Sans Mono:size=12',
+	gap_x = 25,
+	gap_y = 60,
+	minimum_height = 5,
 	minimum_width = 200,
 	maximum_width = 350,
-    net_avg_samples = 2,
+	net_avg_samples = 2,
 	double_buffer = true,
-    no_buffers = true,
-    out_to_console = false,
-    out_to_stderr = false,
-    extra_newline = false,
-    own_window = true,
-    own_window_class = 'Conky',
-    own_window_type = 'override',
+	no_buffers = true,
+	out_to_console = false,
+	out_to_stderr = false,
+	extra_newline = false,
+	own_window = true,
+	own_window_class = 'Conky',
+	own_window_type = 'override',
 	own_window_transparent = true,
-    stippled_borders = 0,
-    update_interval = 1.0,
-    uppercase = false,
-    use_spacer = 'none',
-    show_graph_scale = false,
-    show_graph_range = false
+	stippled_borders = 0,
+	update_interval = 1.0,
+	uppercase = false,
+	use_spacer = 'none',
+	show_graph_scale = false,
+	show_graph_range = false
 }
 
 conky.text = [[
 ${alignc}Scolaire
 
-${execpi 60 cat $HOME/.config/conky/conkyu.task | head -10}
+${execpi 60 cat $HOME/.config/conky/uni.task | head -10}
 $hr
 
 ${alignc}Personnel
 
-${execpi 60 cat $HOME/.config/conky/conky.task | head -10}
+${execpi 60 cat $HOME/.config/conky/perso.task | head -10}
+$hr
+
+${alignc}Maitrise
+
+${execpi 60 cat $HOME/.config/conky/grad.task | head -10}
 ]]
