@@ -34,3 +34,8 @@ set foldlevel=2
 " Encoding
 set encoding=utf-8
 set fileencoding=utf-8
+
+" For python files
+autocmd BufNewFile,BufRead *.py set tabstop=4
+autocmd BufNewFile,BufRead *.py set shiftwidth=4
+autocmd BufNewFile,BufRead *.py set expandtab
