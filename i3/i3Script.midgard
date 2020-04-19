@@ -6,14 +6,16 @@
 ###################
 
 # Autostart programs
-nm-applet &
 setxkbmap -layout ca &
-redshift-gtx &
-compton &
-conkymxvl &
 polybarmxvl &
+redshift-gtx &
+#compton &
+conkymxvl &
 udiskie &
 unclutter --timeout 2 &
+nm-applet &
+# nextcloud &
 
 # Screen layout
+autorandr --current &
 nitrogen --restore &

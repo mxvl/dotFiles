@@ -34,3 +34,6 @@ set foldlevel=2
 " Encoding
 set encoding=utf-8
 set fileencoding=utf-8
+
+" For python files
+autocmd FileType python setlocal shiftwidth=4 tabstop=4 expandtab
