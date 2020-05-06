@@ -1,21 +1,37 @@
-#!/bin/sh
+#!/bin/bash
 ###################
 #                 #
 # i3 local config #
 #                 #
-###################
-
-# Autostart programs
-setxkbmap -layout ca &
-polybarmxvl &
-redshift-gtx &
-#compton &
-conkymxvl &
-udiskie &
-unclutter --timeout 2 &
-nm-applet &
-# nextcloud &
+##################
 
 # Screen layout
 autorandr --current &
 nitrogen --restore &
+
+# xprop config
+
+
+# Autostart programs
+setxkbmap -layout ca &
+udiskie &
+polybarmxvl &
+#compton &
+conkymxvl &
+unclutter --timeout 2 &
+redshift-gtx &
+nm-applet &
+# nextcloud &
+
+# Autostart GUI programs
+apps=(
+	"discord"
+	"firefox"
+	"transmission-qt"
+	"signal-desktop"
+)
+for app in ${apps[@]}
+do
+	i3-msg "workspace 10; exec $app"
+done
+i3-msg move workspace to output right
