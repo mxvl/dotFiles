@@ -91,6 +91,7 @@ compinit -d ~/.cache/zsh/zcompdump-$ZSH_VERSION
 # screenfetch -t
 
 export GPG_TTY=$(tty)
+[[ -f ~/.profile ]] && . ~/.profile
 
 # Aliasses
 alias :q=exit
