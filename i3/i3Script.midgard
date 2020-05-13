@@ -27,6 +27,7 @@ nm-applet &
 apps=(
 	"discord"
 	"firefox"
+	"slack"
 	"transmission-qt"
 	"signal-desktop"
 )
