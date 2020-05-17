@@ -16,23 +16,9 @@ nitrogen --restore &
 setxkbmap -layout ca &
 udiskie &
 polybarmxvl &
-#compton &
+picom -CG &
 conkymxvl &
 unclutter --timeout 2 &
 redshift-gtx &
 nm-applet &
 # nextcloud &
-
-# Autostart GUI programs
-apps=(
-	"discord"
-	"firefox"
-	"slack"
-	"transmission-qt"
-	"signal-desktop"
-)
-for app in ${apps[@]}
-do
-	i3-msg "workspace 10; exec $app"
-done
-i3-msg move workspace to output right

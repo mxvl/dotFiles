@@ -158,14 +158,17 @@ exec xset -dpms
 exec xset s off
 exec xset s noblank
 
-# Keybinding
+# Keybinding for i3 management
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+bindsym $mod+Shift+i exec i3lock -t -i ~/.config/i3/wallpaper.png
+
+# Keybinding for launching programs
 bindsym $mod+x exec firefox
 bindsym $mod+c exec chromium
 bindsym $mod+b exec brave
 bindsym $mod+Shift+c exec google-chrome-stable
-bindsym $mod+Shift+minus move scratchpad
-bindsym $mod+minus scratchpad show
-bindsym $mod+Shift+i exec i3lock -c 000000
+bindsym $mod+Shift+s exec com
 bindsym $mod+shift+a exec autoclicker
 
 # Local settings
