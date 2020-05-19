@@ -1,22 +1,23 @@
-" Common settings
+"""""""""""""""""""
+" Common settings "
+"""""""""""""""""""
 syntax on
 
+" Row numbering
 set number
 set relativenumber
 set ruler
+
+" Windows spliting order
 set splitbelow
+set splitright
 
-set hls is
+" Search settings
+set ignorecase smartcase
+set hls is " 'is' allows real time highlighting
 
+" Shows commands keystrokes
 set showcmd
-
-" Autoindent settings (language dependant)
-set cindent
-" Tab seetings
-set tabstop=2
-set shiftwidth=2
-" Use spaces instead of tabs
-"set expandtab
 
 " Show whitespaces
 set list
@@ -29,12 +30,31 @@ set nofoldenable
 set foldlevel=2
 
 " Autocorrect
-" set spell spelllang=fr
+"set spell spelllang=fr
 
 " Encoding
 set encoding=utf-8
 set fileencoding=utf-8
 
+""""""""""""""""""""
+" Useful functions "
+""""""""""""""""""""
+" Autoformat json documents
+com! FormatJSON %!python -m json.tool
+
+""""""""""""""""""""""""""""""""""""""""""""
+" Autoindent settings (language dependant) "
+""""""""""""""""""""""""""""""""""""""""""""
+set cindent
+" Tab settings
+set tabstop=2
+set shiftwidth=2
+" Use spaces instead of tabs
+"set expandtab
+
+""""""""""""""""""""""""""""""
+" Language specific commands "
+""""""""""""""""""""""""""""""
 " For python files
 autocmd FileType python setlocal shiftwidth=4 tabstop=4 expandtab
 
