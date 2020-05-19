@@ -21,4 +21,4 @@ conkymxvl &
 unclutter --timeout 2 &
 redshift-gtx &
 nm-applet &
-# nextcloud &
+nextcloud &
