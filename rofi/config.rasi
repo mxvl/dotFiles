@@ -1,0 +1,40 @@
+configuration {
+/*
+** Appearence
+*/
+	theme: "/usr/share/rofi/themes/android_notification.rasi";
+	font: "mono 10";
+	show-icons: true;
+	disable-history: true;
+	hide-scrollbar: true;
+
+/*
+** Position and dimensions
+*/
+	monitor: -1;
+	location: 1;
+	width: 100;
+
+	lines: 4;
+	columns: 9;
+
+	line-margin: 0;
+	line-padding: 1;
+	separator-style: "none";
+	bw: 0;
+
+/*
+** Launch options
+*/
+	show: "drun";
+	modi: "window,drun,run,ssh";
+
+	terminal: "terminator";
+	ssh-client: "ssh";
+	run-shell-command: "{terminal} -e '{cmd}; read -n 1 -s'";
+	ssh-command: "{terminal} -e '{ssh-client} {host}; read -n 1 -s'";
+
+/*
+** Miscellaneous
+*/
+}
