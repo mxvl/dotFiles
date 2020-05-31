@@ -58,6 +58,9 @@ set shiftwidth=2
 " For python files
 autocmd FileType python setlocal shiftwidth=4 tabstop=4 expandtab
 
+" For ruby files
+autocmd FileType ruby setlocal expandtab
+
 " For xml files
 autocmd FileType xml let $XMLLINT_INDENT="	"
 autocmd FileType xml set equalprg=xmllint\ --format\ -\ 2>/dev/null
