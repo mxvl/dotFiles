@@ -11,7 +11,7 @@ configuration {
 /*
 ** Position and dimensions
 */
-	monitor: -1;
+	monitor: "-1";
 	location: 1;
 	width: 100;
 
@@ -26,7 +26,6 @@ configuration {
 /*
 ** Launch options
 */
-	show: "drun";
 	modi: "window,drun,run,ssh";
 
 	terminal: "terminator";

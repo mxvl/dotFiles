@@ -16,7 +16,7 @@ nitrogen --restore &
 setxkbmap -layout ca &
 udiskie &
 polybarmxvl &
-picom -CG &
+#picom -CG &
 conkymxvl &
 unclutter --timeout 2 &
 redshift-gtx &
