@@ -89,9 +89,9 @@ compinit -d ~/.cache/zsh/zcompdump-$ZSH_VERSION
 
 # Startup scripts
 # screenfetch -t
-local user_host='%{$terminfo[bold]$fg[green]%}maxime@pc %{$reset_color%}'
-PROMPT="╭─${user_host}${current_dir}${rvm_ruby}${git_branch}${venv_prompt}
-╰─%B${user_symbol}%b "
+#local user_host='%{$terminfo[bold]$fg[green]%}maxime@pc %{$reset_color%}'
+#PROMPT="╭─${user_host}${current_dir}${rvm_ruby}${git_branch}${venv_prompt}
+#╰─%B${user_symbol}%b "
 
 export GPG_TTY=$(tty)
 [[ -f ~/.profile ]] && . ~/.profile
