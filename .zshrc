@@ -99,3 +99,14 @@ export GPG_TTY=$(tty)
 # Aliasses
 alias :q=exit
 alias :x=exit
+
+# Functions
+weather() # Get weather in specified city (Montreal by default
+{
+	if [[ "$#" -gt 0 ]]
+	then
+		curl "http://wttr.in/$1"
+	else
+		curl "http://wttr.in/montreal"
+	fi
+}

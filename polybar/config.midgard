@@ -17,6 +17,7 @@ tray-position = left
 
 [bar/top2]
 inherit = bar/global
+;modules-center = title ; Uncomment when a title would be useful
 monitor = HDMI-0
 
 
@@ -31,6 +32,7 @@ type = internal/temperature
 
 [module/title]
 type = internal/xwindow
+label-maxlen = 50
 
 
 [module/date]
