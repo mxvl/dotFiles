@@ -6,17 +6,19 @@
 ###################
 
 # Tap touchpad to click
-xinput set-prop 14 292 1 & # With libinput
+#xinput set-prop 14 292 1 & # With libinput
+xinput --set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 
 # Autostart programs
 nm-applet &
 setxkbmap -layout ca &
 redshift-gtk &
-compton &
 conkymxvl &
+picom -G &
 polybarmxvl &
 udiskie &
 unclutter --timeout 2 &
+nextcloud &
 
 # Screen layout
 nitrogen --restore &
