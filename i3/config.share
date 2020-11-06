@@ -152,6 +152,7 @@ bindsym $mod+r mode "resize"
 ##############################################################################################
 # Windows settings
 for_window [class="^.*"] border pixel 0 # remove window border
+for_window [class="zoom"] floating enable
 
 # xset settings
 exec xset -dpms

@@ -6,7 +6,7 @@
 ##################
 
 # Screen layout
-autorandr --current &
+autorandr --load default &
 nitrogen --restore &
 
 # xprop config
@@ -17,8 +17,8 @@ setxkbmap -layout ca &
 udiskie &
 polybarmxvl &
 #picom -CG &
-conkymxvl &
-unclutter --timeout 2 &
-redshift-gtx &
+#conkymxvl &
+#unclutter --timeout 2 &
+#redshift-gtx &
 nm-applet &
 nextcloud &

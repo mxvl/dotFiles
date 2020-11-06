@@ -67,3 +67,6 @@ autocmd FileType ruby setlocal expandtab
 " For xml files
 autocmd FileType xml let $XMLLINT_INDENT="	"
 autocmd FileType xml set equalprg=xmllint\ --format\ -\ 2>/dev/null
+
+" For yaml files
+autocmd FileType yaml setlocal shiftwidth=4 tabstop=4 expandtab
