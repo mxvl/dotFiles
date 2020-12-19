@@ -14,7 +14,7 @@ nm-applet &
 setxkbmap -layout ca &
 redshift-gtk &
 conkymxvl &
-picom -G &
+#picom -G &
 polybarmxvl &
 udiskie &
 unclutter --timeout 2 &
