@@ -6,7 +6,7 @@
 ##################
 
 # Screen layout
-autorandr --load default &
+layout
 nitrogen --restore &
 
 # xprop config
@@ -17,8 +17,11 @@ setxkbmap -layout ca &
 udiskie &
 polybarmxvl &
 #picom -CG &
-#conkymxvl &
-#unclutter --timeout 2 &
-#redshift-gtx &
+conkymxvl &
+unclutter --timeout 2 &
+redshift-gtx &
 nm-applet &
 nextcloud &
+
+d=date
+i3-dump-log -f >"~/.i3logs/${d}" &

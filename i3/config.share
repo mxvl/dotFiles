@@ -173,4 +173,4 @@ bindsym $mod+Shift+s exec com
 bindsym $mod+shift+a exec autoclicker
 
 # Local settings
-exec i3Script
+exec --no-startup-id i3Script

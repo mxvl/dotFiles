@@ -99,6 +99,7 @@ export GPG_TTY=$(tty)
 # Aliasses
 alias :q=exit
 alias :x=exit
+alias ZZ=exit
 
 # Functions
 weather() # Get weather in specified city (Montreal by default
@@ -108,5 +109,15 @@ weather() # Get weather in specified city (Montreal by default
 		curl "http://wttr.in/$1"
 	else
 		curl "http://wttr.in/montreal"
+	fi
+}
+
+tabConf() # map xp-pen tablet to a monitor (HDMI-0 by default)
+{
+	if [[ "$#" -gt 0 ]]
+	then
+		xinput map-to-output "UGTABLET 6 inch PenTablet Pen (0)" "$1"
+	else
+		xinput map-to-output "UGTABLET 6 inch PenTablet Pen (0)" HDMI-0
 	fi
 }
