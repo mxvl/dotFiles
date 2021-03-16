@@ -33,6 +33,8 @@ conky.config = {
 	default_color = 'white',
 	default_outline_color = 'white',
 	default_shade_color = 'white',
+	color1 = 'grey',
+	color2 = 'lightgrey',
 	draw_borders = false,
 	draw_graph_borders = true,
 	draw_outline = false,
@@ -66,45 +68,45 @@ conky.text = [[
 ${alignc}${font DejaVu Sans Mono:size=20}$nodename
 ${alignc}${font DejaVu Sans Mono:size=12}$sysname $kernel on $machine 
 $hr
-${color grey}Uptime:$color $uptime
-${color grey}Frequency (in GHz):$color $freq_g
-${color grey}RAM Usage:$color
+${color1}Uptime:$color $uptime
+${color1}Frequency (in GHz):$color $freq_g
+${color1}RAM Usage:$color
   $memperc%	${goto 80}${membar}
   ${goto 100}$mem/$memmax
-${color grey}Swap Usage:$color
+${color1}Swap Usage:$color
   $swapperc% ${goto 80}${swapbar}
   ${goto 100}$swap/$swapmax
-${color grey}CPU Usage:
-  ${color grey}Total: $color$cpu% ${goto 135}${cpubar}
-   ${color grey}CPU1: $color${cpu cpu0}% ${goto 135}${cpubar cpu0}
-   ${color grey}CPU2: $color${cpu cpu1}% ${goto 135}${cpubar cpu1}
-   ${color grey}CPU3: $color${cpu cpu2}% ${goto 135}${cpubar cpu2}
-   ${color grey}CPU4: $color${cpu cpu3}% ${goto 135}${cpubar cpu3}
-   ${color grey}CPU5: $color${cpu cpu4}% ${goto 135}${cpubar cpu4}
-   ${color grey}CPU6: $color${cpu cpu5}% ${goto 135}${cpubar cpu5}
-   ${color grey}CPU7: $color${cpu cpu6}% ${goto 135}${cpubar cpu6}
-   ${color grey}CPU8: $color${cpu cpu7}% ${goto 135}${cpubar cpu7}
-   ${color grey}CPU9: $color${cpu cpu8}% ${goto 135}${cpubar cpu8}
-  ${color grey}CPU10: $color${cpu cpu9}% ${goto 135}${cpubar cpu9}
-  ${color grey}CPU11: $color${cpu cpu10}% ${goto 135}${cpubar cpu10}
-  ${color grey}CPU12: $color${cpu cpu11}% ${goto 135}${cpubar cpu11}
-  ${color grey}CPU13: $color${cpu cpu12}% ${goto 135}${cpubar cpu12}
-  ${color grey}CPU14: $color${cpu cpu13}% ${goto 135}${cpubar cpu13}
-  ${color grey}CPU15: $color${cpu cpu14}% ${goto 135}${cpubar cpu14}
-  ${color grey}CPU16: $color${cpu cpu15}% ${goto 135}${cpubar cpu15}
-  ${color grey}Processes:$color $processes  ${color grey}Running:$color $running_processes
+${color1}CPU Usage:
+  ${color1}Total: $color$cpu% ${goto 135}${cpubar}
+   ${color1}CPU1: $color${cpu cpu0}% ${goto 135}${cpubar cpu0}
+   ${color1}CPU2: $color${cpu cpu1}% ${goto 135}${cpubar cpu1}
+   ${color1}CPU3: $color${cpu cpu2}% ${goto 135}${cpubar cpu2}
+   ${color1}CPU4: $color${cpu cpu3}% ${goto 135}${cpubar cpu3}
+   ${color1}CPU5: $color${cpu cpu4}% ${goto 135}${cpubar cpu4}
+   ${color1}CPU6: $color${cpu cpu5}% ${goto 135}${cpubar cpu5}
+   ${color1}CPU7: $color${cpu cpu6}% ${goto 135}${cpubar cpu6}
+   ${color1}CPU8: $color${cpu cpu7}% ${goto 135}${cpubar cpu7}
+   ${color1}CPU9: $color${cpu cpu8}% ${goto 135}${cpubar cpu8}
+  ${color1}CPU10: $color${cpu cpu9}% ${goto 135}${cpubar cpu9}
+  ${color1}CPU11: $color${cpu cpu10}% ${goto 135}${cpubar cpu10}
+  ${color1}CPU12: $color${cpu cpu11}% ${goto 135}${cpubar cpu11}
+  ${color1}CPU13: $color${cpu cpu12}% ${goto 135}${cpubar cpu12}
+  ${color1}CPU14: $color${cpu cpu13}% ${goto 135}${cpubar cpu13}
+  ${color1}CPU15: $color${cpu cpu14}% ${goto 135}${cpubar cpu14}
+  ${color1}CPU16: $color${cpu cpu15}% ${goto 135}${cpubar cpu15}
+  ${color1}Processes:$color $processes  ${color grey}Running:$color $running_processes
 $hr
-${color grey}File systems:
+${color1}File systems:
  root $color ${goto 80}${fs_bar 6 /}
  ${goto 100}${fs_used /}/${fs_size /}
- ${color grey}home $color ${goto 80}${fs_bar 6 /home/mxvl}
+ ${color1}home $color ${goto 80}${fs_bar 6 /home/mxvl}
  ${goto 100}${fs_used /home/mxvl}/${fs_size /home/mxvl}
-${color grey}Networking:
-Up:$color ${upspeed enp3s0} ${color grey} ${goto 150}- Down:$color ${downspeed enp3s0}
+${color1}Networking:
+Up:$color ${upspeed enp3s0} ${color1} ${goto 150}- Down:$color ${downspeed enp3s0}
 $hr
-${color grey}Name              PID   CPU%   MEM%
-${color lightgrey} ${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1}
-${color lightgrey} ${top name 2} ${top pid 2} ${top cpu 2} ${top mem 2}
-${color lightgrey} ${top name 3} ${top pid 3} ${top cpu 3} ${top mem 3}
-${color lightgrey} ${top name 4} ${top pid 4} ${top cpu 4} ${top mem 4}
+${color1}Name              PID   CPU%   MEM%
+${color2} ${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1}
+${color2} ${top name 2} ${top pid 2} ${top cpu 2} ${top mem 2}
+${color2} ${top name 3} ${top pid 3} ${top cpu 3} ${top mem 3}
+${color2} ${top name 4} ${top pid 4} ${top cpu 4} ${top mem 4}
 ]]
