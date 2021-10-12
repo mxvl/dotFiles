@@ -63,17 +63,12 @@ conky.config = {
 }
 
 conky.text = [[
-${alignc}Scolaire
-
-${execpi 60 cat $HOME/.config/conky/uni.task | head -10}
-$hr
-
 ${alignc}Personnel
 
-${execpi 60 cat $HOME/.config/conky/perso.task | head -10}
+${execpi 10 conky_task personal-3 | head -10}
 $hr
 
 ${alignc}Maitrise
 
-${execpi 60 cat $HOME/.config/conky/grad.task | head -10}
+${execpi 10 conky_task emploi | head -10}
 ]]
