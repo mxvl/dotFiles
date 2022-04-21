@@ -2,7 +2,6 @@ configuration {
 /*
 ** Appearence
 */
-	theme: "/usr/share/rofi/themes/android_notification.rasi";
 	font: "mono 10";
 	show-icons: true;
 	disable-history: true;
@@ -37,3 +36,4 @@ configuration {
 ** Miscellaneous
 */
 }
+	@theme "/usr/share/rofi/themes/android_notification.rasi"

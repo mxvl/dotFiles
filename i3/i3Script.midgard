@@ -19,6 +19,6 @@ polybarmxvl &
 #picom -CG &
 conkymxvl &
 unclutter --timeout 2 &
-redshift-gtx &
+redshift-gtk &
 nm-applet &
 nextcloud &
