@@ -71,7 +71,7 @@ ${alignc}Personnel
 ${execpi 10 conky_task personal-3 | head -10}
 $hr
 
-${alignc}Emploi
+${alignc}Academia
 
-${execpi 10 conky_task emploi | head -10}
+${execpi 10 conky_task maitrise | head -10}
 ]]
