@@ -70,5 +70,5 @@ $hr
 
 ${alignc}Maitrise
 
-${execpi 10 conky_task emploi | head -10}
+${execpi 10 conky_task maitrise | head -10}
 ]]
