@@ -41,8 +41,8 @@ conky.config = {
 	draw_shades = false,
 	use_xft = true,
 	font = 'DejaVu Sans Mono:size=12',
-	gap_x = 1945,
-	gap_y = 40,
+	gap_x = 3045,
+	gap_y = 680,
 	minimum_height = 5,
 	minimum_width = 200,
 	maximum_width = 550,
@@ -62,7 +62,6 @@ conky.config = {
 	use_spacer = 'none',
 	show_graph_scale = false,
 	show_graph_range = false,
-	xinerama_head = 1
 }
 
 conky.text = [[
@@ -74,4 +73,9 @@ $hr
 ${alignc}Academia
 
 ${execpi 10 conky_task maitrise | head -10}
+$hr
+
+${alignc}Emploi
+
+${execpi 10 conky_task emploi-1 | head -10}
 ]]
