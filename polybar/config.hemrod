@@ -20,7 +20,7 @@ tray-position = left
 
 [bar/topMisc]
 inherit = bar/global
-monitor = DP1
+monitor = eDP1
 
 [module/date]
 type = internal/date
