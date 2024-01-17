@@ -171,7 +171,7 @@ bindsym $mod+b exec brave
 bindsym $mod+Shift+c exec google-chrome-stable
 bindsym $mod+Shift+s exec com
 bindsym $mod+Shift+b exec bureau_danny
-bindsym $mod+Shift+p exec portable_droite
+bindsym $mod+Shift+p exec portable_gauche
 bindsym $mod+shift+a exec autoclicker
 
 # Local settings
